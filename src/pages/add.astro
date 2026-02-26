@@ -1,0 +1,17 @@
+---
+import AddAssetForm from "../components/AddAssetForm";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="PlantsImpact | Add Asset">
+  <section class="mb-6">
+    <h1 class="text-2xl font-bold text-slate-900">
+      Add a Plant / Flower / Tree
+    </h1>
+    <p class="mt-2 text-slate-700">
+      Add your green assets to include them in impact estimates.
+    </p>
+  </section>
+
+  <AddAssetForm client:load />
+</BaseLayout>

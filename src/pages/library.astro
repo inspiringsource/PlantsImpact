@@ -1,0 +1,15 @@
+---
+import SpeciesLibrary from "../components/SpeciesLibrary";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="PlantsImpact | Species Library">
+  <section class="mb-6">
+    <h1 class="text-2xl font-bold text-slate-900">Species Library</h1>
+    <p class="mt-2 text-slate-700">
+      Browse demo species and their estimated annual coefficients.
+    </p>
+  </section>
+
+  <SpeciesLibrary client:load />
+</BaseLayout>

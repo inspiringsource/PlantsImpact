@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120"><svg id="icon-tree" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+
+  <!-- Blue background -->
+  <rect width="120" height="120" fill="#1976D2" rx="20"></rect>
+
+  <!-- Tree trunk (moved behind) -->
+  <rect x="49.53" y="52.852" width="20.94" height="67.161" fill="#5D4037"></rect>
+
+  <!-- Tree top -->
+  <polygon points="-0.069,90.928 59.999,27.071 120.068,90.928" fill="#2E7D32"></polygon>
+
+  <polygon points="13.825,49.087 59.999,0 106.175,49.087" fill="#43A047"></polygon>
+
+</svg></svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
