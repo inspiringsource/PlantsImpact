@@ -2,6 +2,72 @@
 
 Mobile-first impact tracker for plants, trees, and flowers. The app estimates positive effects over selectable horizons (1 / 2 / 5 / 10 years), stores assets locally, and works offline as an installable PWA.
 
+## Feedback and suggestions (interviews and feature requests) 
+
+Good. This is exactly what UCDRE wants — real user feedback.
+
+Here is a clean Interview Log (Draft) you can use later for documentation:
+
+⸻
+
+Interview Log – First Insights (28.02.26 [Saturday])
+
+Participants
+
+- 3 FHNW secretariat staff
+- 1 FHNW student
+
+Student (competitive personality)
+
+- Would install the app.
+- Motivation driver: competition.
+- Suggested feature: online leaderboard or scoring system.
+- Insight: Social comparison and gamification may increase engagement.
+
+Secretariat – Person 1
+
+- Already owns plants.
+- Does not feel the need for an app.
+- Insight: Existing plant owners may not see additional value unless clear benefit is shown.
+
+Secretariat – Person 2
+
+- Does not own plants.
+- Said an app could motivate them to start.
+- Insight: App could act as behavioral trigger for new plant adoption.
+
+Secretariat – Person 3
+
+- Similar to Person 2.
+- Suggested watering reminders and care support.
+- Insight: Practical plant-care support may be more valuable than environmental metrics alone.
+
+⸻
+
+Emerging Patterns
+
+- Motivation differs strongly by personality.
+- Gamification works for competitive users.
+- Practical utility (reminders, care tips) may be stronger than abstract climate data.
+- Environmental awareness alone may not be enough to drive engagement.
+
+⸻
+
+This is very good material for:
+
+- Affinity Diagram
+- User motivation analysis
+- Refining user types
+- Updating assumptions
+
+And you did the right thing:
+You’re collecting insights without immediately implementing features.
+
+If you want next, I can help you:
+
+- Turn this into a 500-character “Lösungsprozess & Erkenntnisse”
+- Or structure it into an Affinity Diagram format.
+
 ## Run locally
 
 ```sh

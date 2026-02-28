@@ -56,6 +56,90 @@
     }
   },
   {
+    "id": "tree-beech",
+    "name": "Beech (Fagus sylvatica)",
+    "category": "tree",
+    "description": "Common Swiss broadleaf tree with dense crown and strong summer shading potential. Coefficients are estimates for demo use.",
+    "tags": ["tree", "native", "city", "seasonal", "biodiversity"],
+    "coefficients": {
+      "co2_kg_per_year": 23,
+      "cooling_c_per_year": 0.065,
+      "pm25_g_per_year": 175,
+      "pollinator_score_per_year": 1.9,
+      "sleep_score_per_year": 0.42
+    }
+  },
+  {
+    "id": "tree-spruce",
+    "name": "Spruce (Picea abies)",
+    "category": "tree",
+    "description": "Evergreen conifer widely planted from Alpine areas to urban parks in Switzerland. Coefficients are estimates for demo use.",
+    "tags": ["tree", "native", "city", "seasonal", "biodiversity", "resilient"],
+    "coefficients": {
+      "co2_kg_per_year": 21,
+      "cooling_c_per_year": 0.05,
+      "pm25_g_per_year": 185,
+      "pollinator_score_per_year": 1.3,
+      "sleep_score_per_year": 0.3
+    }
+  },
+  {
+    "id": "tree-silver-fir",
+    "name": "Silver Fir (Abies alba)",
+    "category": "tree",
+    "description": "Native Swiss mountain and forest tree with year-round canopy function. Coefficients are estimates for demo use.",
+    "tags": ["tree", "native", "seasonal", "biodiversity", "resilient"],
+    "coefficients": {
+      "co2_kg_per_year": 22,
+      "cooling_c_per_year": 0.052,
+      "pm25_g_per_year": 190,
+      "pollinator_score_per_year": 1.2,
+      "sleep_score_per_year": 0.31
+    }
+  },
+  {
+    "id": "tree-birch",
+    "name": "Birch (Betula pendula)",
+    "category": "tree",
+    "description": "Light-canopy native tree often used in Swiss neighborhoods and mixed habitats. Coefficients are estimates for demo use.",
+    "tags": ["tree", "native", "city", "seasonal", "biodiversity"],
+    "coefficients": {
+      "co2_kg_per_year": 17,
+      "cooling_c_per_year": 0.045,
+      "pm25_g_per_year": 145,
+      "pollinator_score_per_year": 1.7,
+      "sleep_score_per_year": 0.28
+    }
+  },
+  {
+    "id": "tree-apple",
+    "name": "Apple Tree (Malus domestica)",
+    "category": "tree",
+    "description": "Fruit tree common in Swiss gardens and peri-urban orchards with spring blossoms. Coefficients are estimates for demo use.",
+    "tags": ["tree", "city", "seasonal", "biodiversity", "pollinator", "edible"],
+    "coefficients": {
+      "co2_kg_per_year": 14,
+      "cooling_c_per_year": 0.038,
+      "pm25_g_per_year": 120,
+      "pollinator_score_per_year": 3,
+      "sleep_score_per_year": 0.27
+    }
+  },
+  {
+    "id": "tree-cherry",
+    "name": "Cherry Tree (Prunus avium)",
+    "category": "tree",
+    "description": "Spring-flowering Swiss favorite that supports pollinators and urban biodiversity. Coefficients are estimates for demo use.",
+    "tags": ["tree", "native", "city", "seasonal", "biodiversity", "pollinator", "edible"],
+    "coefficients": {
+      "co2_kg_per_year": 15,
+      "cooling_c_per_year": 0.04,
+      "pm25_g_per_year": 125,
+      "pollinator_score_per_year": 3.2,
+      "sleep_score_per_year": 0.29
+    }
+  },
+  {
     "id": "plant-snake",
     "name": "Snake Plant",
     "category": "plant",
@@ -104,6 +188,84 @@
     }
   },
   {
+    "id": "plant-geranium",
+    "name": "Geranium",
+    "category": "plant",
+    "description": "Classic Swiss balcony plant known for long flowering season and urban suitability. Coefficients are estimates for demo use.",
+    "tags": ["plant", "urban", "beginner", "resilient", "seasonal", "pollinator"],
+    "coefficients": {
+      "co2_kg_per_year": 0.8,
+      "pm25_g_per_year": 11,
+      "pollinator_score_per_year": 2.4,
+      "sleep_score_per_year": 0.8
+    }
+  },
+  {
+    "id": "plant-ivy",
+    "name": "Ivy",
+    "category": "plant",
+    "description": "Resilient climber often used on Swiss balconies and walls for green cover. Coefficients are estimates for demo use.",
+    "tags": ["plant", "urban", "beginner", "resilient", "biodiversity"],
+    "coefficients": {
+      "co2_kg_per_year": 0.9,
+      "pm25_g_per_year": 13,
+      "pollinator_score_per_year": 1.4,
+      "sleep_score_per_year": 0.7
+    }
+  },
+  {
+    "id": "plant-boxwood",
+    "name": "Boxwood",
+    "category": "plant",
+    "description": "Compact evergreen shrub used in Swiss gardens and balcony planters. Coefficients are estimates for demo use.",
+    "tags": ["plant", "urban", "beginner", "resilient", "seasonal"],
+    "coefficients": {
+      "co2_kg_per_year": 1.1,
+      "pm25_g_per_year": 15,
+      "pollinator_score_per_year": 1,
+      "sleep_score_per_year": 0.75
+    }
+  },
+  {
+    "id": "plant-thyme",
+    "name": "Thyme",
+    "category": "plant",
+    "description": "Small aromatic herb common in Swiss pots and urban kitchen gardens. Coefficients are estimates for demo use.",
+    "tags": ["plant", "urban", "beginner", "edible", "resilient", "pollinator"],
+    "coefficients": {
+      "co2_kg_per_year": 0.6,
+      "pm25_g_per_year": 9,
+      "pollinator_score_per_year": 2.8,
+      "sleep_score_per_year": 0.6
+    }
+  },
+  {
+    "id": "plant-mint",
+    "name": "Mint",
+    "category": "plant",
+    "description": "Fast-growing edible herb suitable for Swiss balconies and small gardens. Coefficients are estimates for demo use.",
+    "tags": ["plant", "urban", "beginner", "edible", "resilient", "pollinator"],
+    "coefficients": {
+      "co2_kg_per_year": 0.7,
+      "pm25_g_per_year": 10,
+      "pollinator_score_per_year": 2.5,
+      "sleep_score_per_year": 0.65
+    }
+  },
+  {
+    "id": "plant-blueberry-bush",
+    "name": "Blueberry Bush",
+    "category": "plant",
+    "description": "Edible shrub increasingly grown in Swiss urban gardens and balconies. Coefficients are estimates for demo use.",
+    "tags": ["plant", "urban", "edible", "resilient", "pollinator", "seasonal"],
+    "coefficients": {
+      "co2_kg_per_year": 1.3,
+      "pm25_g_per_year": 16,
+      "pollinator_score_per_year": 2.7,
+      "sleep_score_per_year": 0.78
+    }
+  },
+  {
     "id": "flower-lavender",
     "name": "Lavender",
     "category": "flower",
@@ -149,6 +311,66 @@
       "co2_kg_per_year": 0.9,
       "pollinator_score_per_year": 2.9,
       "sleep_score_per_year": 0.8
+    }
+  },
+  {
+    "id": "flower-edelweiss",
+    "name": "Edelweiss",
+    "category": "flower",
+    "description": "Iconic Alpine flower native to Swiss mountain regions. Coefficients are estimates for demo use.",
+    "tags": ["flower", "seasonal", "native", "resilient"],
+    "coefficients": {
+      "co2_kg_per_year": 0.5,
+      "pollinator_score_per_year": 1.9,
+      "sleep_score_per_year": 0.55
+    }
+  },
+  {
+    "id": "flower-cornflower",
+    "name": "Cornflower",
+    "category": "flower",
+    "description": "Field flower often used in Swiss meadow-style planting for biodiversity. Coefficients are estimates for demo use.",
+    "tags": ["flower", "seasonal", "pollinator", "native"],
+    "coefficients": {
+      "co2_kg_per_year": 0.6,
+      "pollinator_score_per_year": 3.2,
+      "sleep_score_per_year": 0.62
+    }
+  },
+  {
+    "id": "flower-daisy",
+    "name": "Daisy",
+    "category": "flower",
+    "description": "Common flower in Swiss lawns and meadows with broad seasonal presence. Coefficients are estimates for demo use.",
+    "tags": ["flower", "seasonal", "pollinator", "native"],
+    "coefficients": {
+      "co2_kg_per_year": 0.55,
+      "pollinator_score_per_year": 2.6,
+      "sleep_score_per_year": 0.58
+    }
+  },
+  {
+    "id": "flower-crocus",
+    "name": "Crocus",
+    "category": "flower",
+    "description": "Early seasonal bloom seen across Swiss gardens and alpine meadows. Coefficients are estimates for demo use.",
+    "tags": ["flower", "seasonal", "pollinator", "native"],
+    "coefficients": {
+      "co2_kg_per_year": 0.45,
+      "pollinator_score_per_year": 2.9,
+      "sleep_score_per_year": 0.5
+    }
+  },
+  {
+    "id": "flower-tulip",
+    "name": "Tulip",
+    "category": "flower",
+    "description": "Popular spring flower in Swiss balconies and urban beds. Coefficients are estimates for demo use.",
+    "tags": ["flower", "seasonal", "pollinator"],
+    "coefficients": {
+      "co2_kg_per_year": 0.5,
+      "pollinator_score_per_year": 2.2,
+      "sleep_score_per_year": 0.54
     }
   }
 ]
