@@ -56,3 +56,7 @@ No backend is required.
 4. Add a few plants.
 5. Switch network to Offline in DevTools and reload.
 6. Confirm app shell loads and saved assets/totals are still visible.
+
+## Sustainable Development Goals
+
+This project addresses the United Nations Sustainable Development Goals (SDGs) at https://sdgs.un.org/goals
