@@ -133,14 +133,6 @@ export default function SpeciesLibrary() {
                 </dd>
               </div>
               <div className="rounded-md bg-slate-50 p-2">
-                <dt className="text-slate-500">Stormwater L/year</dt>
-                <dd className="font-medium text-slate-900">
-                  {displayNumber(
-                    selectedSpecies.coefficients.stormwater_l_per_year,
-                  )}
-                </dd>
-              </div>
-              <div className="rounded-md bg-slate-50 p-2">
                 <dt className="text-slate-500">Pollinator score/year</dt>
                 <dd className="font-medium text-slate-900">
                   {displayNumber(

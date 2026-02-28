@@ -1,4 +1,4 @@
-const horizons = [2, 5, 10, 20] as const;
+const horizons = [1, 2, 5, 10] as const;
 
 interface HorizonSelectorProps {
   horizon: number;
@@ -27,7 +27,7 @@ export default function HorizonSelector({
             }`}
             aria-label={`Set horizon to ${year} years`}
           >
-            {year}y
+            {year} {year === 1 ? "year" : "years"}
           </button>
         ))}
       </div>

@@ -1,6 +1,6 @@
 # PlantsImpact
 
-Mobile-first impact tracker for plants, trees, and flowers. The app estimates positive effects over selectable horizons (2 / 5 / 10 / 20 years), stores assets locally, and works offline as an installable PWA.
+Mobile-first impact tracker for plants, trees, and flowers. The app estimates positive effects over selectable horizons (1 / 2 / 5 / 10 years), stores assets locally, and works offline as an installable PWA.
 
 ## Run locally
 

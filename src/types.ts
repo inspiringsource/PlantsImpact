@@ -4,7 +4,6 @@ export interface SpeciesCoefficients {
 	co2_kg_per_year: number;
 	cooling_c_per_year?: number;
 	pm25_g_per_year?: number;
-	stormwater_l_per_year?: number;
 	pollinator_score_per_year?: number;
 	sleep_score_per_year?: number;
 }
@@ -32,7 +31,6 @@ export interface ComputedTotals {
 	totalCo2Kg: number;
 	totalCoolingC: number;
 	totalPM25g: number;
-	totalStormwaterL: number;
 	totalPollinatorScore: number;
 	totalSleepScore: number;
 }

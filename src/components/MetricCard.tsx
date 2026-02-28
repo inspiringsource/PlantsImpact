@@ -4,6 +4,7 @@ interface MetricCardProps {
   value: string;
   unit: string;
   equivalent: string;
+  note?: string;
 }
 
 export default function MetricCard({
@@ -12,6 +13,7 @@ export default function MetricCard({
   value,
   unit,
   equivalent,
+  note,
 }: MetricCardProps) {
   return (
     <article className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
@@ -26,6 +28,7 @@ export default function MetricCard({
         <span className="text-base font-medium text-slate-500">{unit}</span>
       </p>
       <p className="mt-2 text-xs text-slate-500">{equivalent}</p>
+      {note ? <p className="mt-1 text-xs text-slate-500">{note}</p> : null}
     </article>
   );
 }

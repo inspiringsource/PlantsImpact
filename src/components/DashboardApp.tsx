@@ -10,7 +10,6 @@ import {
   equivalentForCo2,
   equivalentForCooling,
   equivalentForPm25,
-  equivalentForStormwater,
 } from "../lib/equivalents";
 import { speciesById } from "../lib/species";
 import { loadAssets } from "../lib/storage";
@@ -24,7 +23,7 @@ function formatValue(value: number, maxFractionDigits = 1): string {
 
 export default function DashboardApp() {
   const [assets, setAssets] = useState<UserAsset[]>(() => loadAssets());
-  const [horizon, setHorizon] = useState<number>(5);
+  const [horizon, setHorizon] = useState<number>(2);
   const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   const totals = useMemo(
@@ -53,13 +52,6 @@ export default function DashboardApp() {
       value: formatValue(totals.totalPM25g),
       unit: "g",
       equivalent: equivalentForPm25(totals.totalPM25g),
-    },
-    {
-      icon: "💧",
-      label: "Stormwater",
-      value: formatValue(totals.totalStormwaterL),
-      unit: "L",
-      equivalent: equivalentForStormwater(totals.totalStormwaterL),
     },
     {
       icon: "🦋",

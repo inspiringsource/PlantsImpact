@@ -12,11 +12,11 @@ function formatValue(value: number, maxFractionDigits = 1): string {
 }
 
 export default function ImpactSummary({ totals, horizon }: ImpactSummaryProps) {
-  const progress = Math.min(100, (horizon / 20) * 100);
+  const progress = Math.min(100, (horizon / 10) * 100);
   const ringStyle = {
     background: `conic-gradient(rgb(16 185 129) ${progress}%, rgb(226 232 240) ${progress}% 100%)`,
   };
-  const treeScale = 0.85 + (horizon / 20) * 0.45;
+  const treeScale = 0.85 + (horizon / 10) * 0.45;
 
   return (
     <section className="rounded-3xl bg-slate-900 p-5 text-white shadow-sm">
@@ -49,9 +49,9 @@ export default function ImpactSummary({ totals, horizon }: ImpactSummaryProps) {
 
       <div className="mt-4 grid grid-cols-2 gap-2 text-sm">
         <div className="rounded-xl bg-white/10 px-3 py-2">
-          <p className="text-slate-300">Stormwater</p>
+          <p className="text-slate-300">Sleep</p>
           <p className="font-semibold text-white">
-            {formatValue(totals.totalStormwaterL)} L
+            {formatValue(totals.totalSleepScore)} score
           </p>
         </div>
         <div className="rounded-xl bg-white/10 px-3 py-2">

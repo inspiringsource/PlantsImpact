@@ -18,7 +18,6 @@ export function computeTotals(
 			acc.totalCo2Kg += c.co2_kg_per_year * factor;
 			acc.totalCoolingC += (c.cooling_c_per_year ?? 0) * factor;
 			acc.totalPM25g += (c.pm25_g_per_year ?? 0) * factor;
-			acc.totalStormwaterL += (c.stormwater_l_per_year ?? 0) * factor;
 			acc.totalPollinatorScore += (c.pollinator_score_per_year ?? 0) * factor;
 			acc.totalSleepScore += (c.sleep_score_per_year ?? 0) * factor;
 
@@ -28,7 +27,6 @@ export function computeTotals(
 			totalCo2Kg: 0,
 			totalCoolingC: 0,
 			totalPM25g: 0,
-			totalStormwaterL: 0,
 			totalPollinatorScore: 0,
 			totalSleepScore: 0,
 		}

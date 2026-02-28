@@ -9,7 +9,6 @@
       "co2_kg_per_year": 22,
       "cooling_c_per_year": 0.06,
       "pm25_g_per_year": 170,
-      "stormwater_l_per_year": 1200,
       "pollinator_score_per_year": 2.2,
       "sleep_score_per_year": 0.4
     }
@@ -24,7 +23,6 @@
       "co2_kg_per_year": 19,
       "cooling_c_per_year": 0.05,
       "pm25_g_per_year": 150,
-      "stormwater_l_per_year": 980,
       "pollinator_score_per_year": 1.8,
       "sleep_score_per_year": 0.3
     }
@@ -39,7 +37,6 @@
       "co2_kg_per_year": 20,
       "cooling_c_per_year": 0.055,
       "pm25_g_per_year": 160,
-      "stormwater_l_per_year": 1050,
       "pollinator_score_per_year": 2.8,
       "sleep_score_per_year": 0.35
     }
@@ -54,7 +51,6 @@
       "co2_kg_per_year": 18,
       "cooling_c_per_year": 0.04,
       "pm25_g_per_year": 180,
-      "stormwater_l_per_year": 900,
       "pollinator_score_per_year": 1.1,
       "sleep_score_per_year": 0.25
     }
