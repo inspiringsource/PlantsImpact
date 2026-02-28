@@ -116,7 +116,14 @@
     "name": "Apple Tree (Malus domestica)",
     "category": "tree",
     "description": "Fruit tree common in Swiss gardens and peri-urban orchards with spring blossoms. Coefficients are estimates for demo use.",
-    "tags": ["tree", "city", "seasonal", "biodiversity", "pollinator", "edible"],
+    "tags": [
+      "tree",
+      "city",
+      "seasonal",
+      "biodiversity",
+      "pollinator",
+      "edible"
+    ],
     "coefficients": {
       "co2_kg_per_year": 14,
       "cooling_c_per_year": 0.038,
@@ -130,7 +137,15 @@
     "name": "Cherry Tree (Prunus avium)",
     "category": "tree",
     "description": "Spring-flowering Swiss favorite that supports pollinators and urban biodiversity. Coefficients are estimates for demo use.",
-    "tags": ["tree", "native", "city", "seasonal", "biodiversity", "pollinator", "edible"],
+    "tags": [
+      "tree",
+      "native",
+      "city",
+      "seasonal",
+      "biodiversity",
+      "pollinator",
+      "edible"
+    ],
     "coefficients": {
       "co2_kg_per_year": 15,
       "cooling_c_per_year": 0.04,
@@ -192,7 +207,14 @@
     "name": "Geranium",
     "category": "plant",
     "description": "Classic Swiss balcony plant known for long flowering season and urban suitability. Coefficients are estimates for demo use.",
-    "tags": ["plant", "urban", "beginner", "resilient", "seasonal", "pollinator"],
+    "tags": [
+      "plant",
+      "urban",
+      "beginner",
+      "resilient",
+      "seasonal",
+      "pollinator"
+    ],
     "coefficients": {
       "co2_kg_per_year": 0.8,
       "pm25_g_per_year": 11,
