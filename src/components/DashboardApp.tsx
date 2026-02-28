@@ -84,7 +84,7 @@ export default function DashboardApp() {
       <button
         type="button"
         onClick={() => setIsSheetOpen(true)}
-        className="fixed bottom-5 right-4 z-30 min-h-14 rounded-full bg-emerald-600 px-5 text-sm font-semibold text-white shadow-lg hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+        className="fixed bottom-5 left-1/2 -translate-x-1/2 z-30 min-h-14 rounded-full bg-emerald-600 px-5 text-sm font-semibold text-white shadow-lg hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
         aria-label="Add plant"
       >
         + Add plant
