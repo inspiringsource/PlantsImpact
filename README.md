@@ -10,12 +10,12 @@ Here is a clean Interview Log (Draft) you can use later for documentation:
 
 ⸻
 
-Interview Log – First Insights (28.02.26 [Saturday])
+Interview Log – First Insights (28.02.26 [Saturday] – 3.3.2024 [Sunday])
 
 Participants
 
-- 3 FHNW secretariat staff
-- 1 FHNW student
+- 3 FHNW secretariat staff (K., S.H., D.)
+- 1 FHNW student (I. O.)
 
 Student (competitive personality)
 
