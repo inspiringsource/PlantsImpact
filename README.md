@@ -10,7 +10,7 @@ Here is a clean Interview Log (Draft) you can use later for documentation:
 
 ⸻
 
-Interview Log – First Insights (28.02.26 [Saturday] – 3.3.2024 [Sunday])
+Interview Log – First Insights (28.02.26 [Saturday] – 7.3.2024 [Saturday])
 
 Participants
 
