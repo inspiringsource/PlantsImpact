@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const friends = [
+  { name: "Mia Keller", plants: 12, streak: "6 weeks" },
+  { name: "Luca Meier", plants: 7, streak: "3 weeks" },
+  { name: "Nora Baumann", plants: 18, streak: "9 weeks" },
+  { name: "Elias Frei", plants: 5, streak: "1 week" },
+  { name: "Sofia Wenger", plants: 14, streak: "4 weeks" },
+  { name: "Jonas Roth", plants: 9, streak: "5 weeks" },
+];
+---
+
+<BaseLayout title="PlantsImpact | Friends">
+  <section class="mb-6">
+    <h1 class="text-2xl font-bold text-slate-900">Friends</h1>
+    <p class="mt-2 text-slate-700">
+      Demo social view for comparing who is tracking the most plants.
+    </p>
+  </section>
+
+  <section class="space-y-3">
+    {
+      friends.map((friend) => (
+        <article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p class="text-lg font-semibold text-slate-900">{friend.name}</p>
+              <p class="mt-1 text-sm text-slate-600">
+                Active streak: {friend.streak}
+              </p>
+            </div>
+            <div class="rounded-2xl bg-emerald-50 px-3 py-2 text-right">
+              <p class="text-xs uppercase tracking-wide text-emerald-700">Plants</p>
+              <p class="text-xl font-bold text-emerald-700">{friend.plants}</p>
+            </div>
+          </div>
+        </article>
+      ))
+    }
+  </section>
+</BaseLayout>

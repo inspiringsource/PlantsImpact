@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 import AddPlantSheet from "./AddPlantSheet";
+import AddPlantMethodSheet from "./AddPlantMethodSheet";
 import AssetsList from "./AssetsList";
+import FakeCameraSheet from "./FakeCameraSheet";
 import HorizonSelector from "./HorizonSelector";
 import ImpactSummary from "./ImpactSummary";
 import MetricCard from "./MetricCard";
@@ -24,7 +26,10 @@ function formatValue(value: number, maxFractionDigits = 1): string {
 export default function DashboardApp() {
   const [assets, setAssets] = useState<UserAsset[]>(() => loadAssets());
   const [horizon, setHorizon] = useState<number>(2);
-  const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const [isMethodSheetOpen, setIsMethodSheetOpen] = useState(false);
+  const [isAddPlantSheetOpen, setIsAddPlantSheetOpen] = useState(false);
+  const [isCameraSheetOpen, setIsCameraSheetOpen] = useState(false);
+  const [prefilledSpeciesId, setPrefilledSpeciesId] = useState<string>();
 
   const totals = useMemo(
     () => computeTotals(assets, speciesById, horizon),
@@ -83,17 +88,45 @@ export default function DashboardApp() {
 
       <button
         type="button"
-        onClick={() => setIsSheetOpen(true)}
+        onClick={() => setIsMethodSheetOpen(true)}
         className="fixed bottom-5 left-1/2 -translate-x-1/2 z-30 min-h-14 rounded-full bg-emerald-600 px-5 text-sm font-semibold text-white shadow-lg hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
         aria-label="Add plant"
       >
         + Add plant
       </button>
 
+      <AddPlantMethodSheet
+        open={isMethodSheetOpen}
+        onClose={() => setIsMethodSheetOpen(false)}
+        onSelectManual={() => {
+          setPrefilledSpeciesId(undefined);
+          setIsMethodSheetOpen(false);
+          setIsAddPlantSheetOpen(true);
+        }}
+        onSelectCamera={() => {
+          setIsMethodSheetOpen(false);
+          setIsCameraSheetOpen(true);
+        }}
+      />
+
+      <FakeCameraSheet
+        open={isCameraSheetOpen}
+        onClose={() => setIsCameraSheetOpen(false)}
+        onSimulateScan={(speciesId) => {
+          setPrefilledSpeciesId(speciesId);
+          setIsCameraSheetOpen(false);
+          setIsAddPlantSheetOpen(true);
+        }}
+      />
+
       <AddPlantSheet
-        open={isSheetOpen}
-        onClose={() => setIsSheetOpen(false)}
+        open={isAddPlantSheetOpen}
+        onClose={() => {
+          setIsAddPlantSheetOpen(false);
+          setPrefilledSpeciesId(undefined);
+        }}
         onAdded={setAssets}
+        initialSpeciesId={prefilledSpeciesId}
       />
     </div>
   );

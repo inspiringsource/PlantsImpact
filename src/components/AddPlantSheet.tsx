@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { speciesList } from "../lib/species";
 import { addAsset } from "../lib/storage";
 import type { AssetCategory, UserAsset } from "../types";
@@ -7,6 +7,7 @@ interface AddPlantSheetProps {
   open: boolean;
   onClose: () => void;
   onAdded: (assets: UserAsset[]) => void;
+  initialSpeciesId?: string;
 }
 
 const categories: Array<AssetCategory | "all"> = [
@@ -20,6 +21,7 @@ export default function AddPlantSheet({
   open,
   onClose,
   onAdded,
+  initialSpeciesId,
 }: AddPlantSheetProps) {
   const [step, setStep] = useState(1);
   const [search, setSearch] = useState("");
@@ -43,6 +45,26 @@ export default function AddPlantSheet({
   const selectedSpecies = speciesList.find(
     (species) => species.id === speciesId,
   );
+
+  useEffect(() => {
+    if (!open) return;
+
+    setSearch("");
+    setQuantity(1);
+    setNickname("");
+    setNotes("");
+
+    if (initialSpeciesId) {
+      setSpeciesId(initialSpeciesId);
+      setCategory("all");
+      setStep(2);
+      return;
+    }
+
+    setCategory("all");
+    setSpeciesId("");
+    setStep(1);
+  }, [open, initialSpeciesId]);
 
   function resetForm() {
     setStep(1);

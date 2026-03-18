@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const ranking = [
+  { rank: 1, name: "Nora Baumann", score: 248, change: "+12" },
+  { rank: 2, name: "Avi", score: 214, change: "+9" },
+  { rank: 3, name: "Mia Keller", score: 206, change: "+7" },
+  { rank: 4, name: "Sofia Wenger", score: 185, change: "+4" },
+  { rank: 5, name: "Luca Meier", score: 162, change: "+3" },
+];
+---
+
+<BaseLayout title="PlantsImpact | Leaderboard">
+  <section class="mb-6">
+    <h1 class="text-2xl font-bold text-slate-900">Leaderboard</h1>
+    <p class="mt-2 text-slate-700">
+      Fake ranking data for the MVP social motivation view.
+    </p>
+  </section>
+
+  <section class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+    {
+      ranking.map((entry) => (
+        <article class="flex items-center justify-between gap-4 border-b border-slate-100 px-4 py-4 last:border-b-0">
+          <div class="flex items-center gap-3">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 font-semibold text-slate-700">
+              #{entry.rank}
+            </div>
+            <div>
+              <p class="font-semibold text-slate-900">{entry.name}</p>
+              <p class="text-sm text-slate-600">Impact score this month</p>
+            </div>
+          </div>
+          <div class="text-right">
+            <p class="text-lg font-bold text-emerald-700">{entry.score}</p>
+            <p class="text-sm text-emerald-600">{entry.change}</p>
+          </div>
+        </article>
+      ))
+    }
+  </section>
+</BaseLayout>
