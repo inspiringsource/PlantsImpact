@@ -2,6 +2,18 @@
 
 Mobile-first impact tracker for plants, trees, and flowers. The app estimates positive effects over selectable horizons (1 / 2 / 5 / 10 years), stores assets locally, and works offline as an installable PWA.
 
+## Requirements Engineering MVP prototype
+
+PlantsImpact demonstrates the UCDRE MVP concept with a focused prototype flow:
+
+- Add a plant through a manual library search or the fake camera scan.
+- Show the plant in a personal plant list stored locally in the browser.
+- Visualize estimated long-term impact over 1, 2, 5, and 10 years.
+- Provide motivational feedback and progress wording such as “Small actions, long-term effect.”
+- Keep social motivation visible through prototype Friends and Leaderboard pages.
+
+The estimates use simplified prototype values from the local species library. The app intentionally avoids authentication, a real backend, real AR, real plant recognition APIs, quizzes, video tutorials, and group systems so it stays a realistic MVP for Requirements Engineering validation.
+
 ## Feedback and suggestions (interviews and feature requests) 
 
 Good. This is exactly what UCDRE wants — real user feedback.

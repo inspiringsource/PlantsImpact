@@ -19,19 +19,19 @@ export default function ImpactSummary({ totals, horizon }: ImpactSummaryProps) {
   const treeScale = 0.85 + (horizon / 10) * 0.45;
 
   return (
-    <section className="rounded-3xl bg-slate-900 p-5 text-white shadow-sm">
-      <p className="text-xs uppercase tracking-wide text-emerald-300">
-        Your impact
+    <section className="rounded-3xl bg-slate-950 p-5 text-white shadow-sm">
+      <p className="text-xs font-semibold uppercase tracking-wide text-emerald-300">
+        PlantsImpact
       </p>
       <div className="mt-4 flex items-center justify-between gap-3">
         <div>
           <p className="text-sm text-slate-300">
-            Estimated over {horizon} years
+            Estimated impact over {horizon} {horizon === 1 ? "year" : "years"}
           </p>
           <p className="mt-1 text-3xl font-semibold">
             {formatValue(totals.totalCo2Kg)} kg
           </p>
-          <p className="text-sm text-slate-300">CO₂ captured</p>
+          <p className="text-sm text-slate-300">CO₂ contribution</p>
         </div>
 
         <div
@@ -49,7 +49,7 @@ export default function ImpactSummary({ totals, horizon }: ImpactSummaryProps) {
 
       <div className="mt-4 grid grid-cols-2 gap-2 text-sm">
         <div className="rounded-xl bg-white/10 px-3 py-2">
-          <p className="text-slate-300">Sleep</p>
+          <p className="text-slate-300">Well-being</p>
           <p className="font-semibold text-white">
             {formatValue(totals.totalSleepScore)} score
           </p>

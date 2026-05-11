@@ -36,8 +36,14 @@ export default function AssetsList({ assets, onChange }: AssetsListProps) {
 
   if (assets.length === 0) {
     return (
-      <section className="rounded-2xl bg-white p-4 text-sm text-slate-600 shadow-sm ring-1 ring-slate-200">
-        No plants tracked yet. Tap “+ Add plant” to start your impact journey.
+      <section className="rounded-3xl border border-dashed border-emerald-300 bg-emerald-50/70 p-5 text-center shadow-sm">
+        <p className="text-base font-semibold text-slate-950">
+          Your plant list is empty
+        </p>
+        <p className="mx-auto mt-2 max-w-sm text-sm text-slate-700">
+          Add your first plant to start tracking estimated impact. Small
+          action, long-term effect.
+        </p>
       </section>
     );
   }
