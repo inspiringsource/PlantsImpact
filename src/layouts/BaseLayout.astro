@@ -102,5 +102,27 @@ const nav = [
     <main class="mx-auto max-w-3xl px-4 py-4 sm:py-6">
       <slot />
     </main>
+
+    <footer class="mt-8 border-t border-emerald-100 bg-white/70 pb-safe">
+      <div class="mx-auto max-w-3xl px-4 py-4 text-center sm:pr-4 pr-28">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc_fNXbHLLRoxT_B48V9kUEDpVdnmLdccT2892nRMQLymm3Ig/viewform?usp=publish-editor"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-medium text-emerald-700 transition hover:bg-emerald-100"
+        >
+          <svg viewBox="0 0 24 24" class="h-4 w-4 fill-none stroke-current stroke-2 shrink-0" aria-hidden="true">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          </svg>
+          Help us improve PlantsImpact
+          <svg viewBox="0 0 24 24" class="h-3.5 w-3.5 fill-none stroke-current stroke-2 shrink-0 opacity-60" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+        </a>
+        <p class="mt-1.5 text-xs text-slate-400">Part of an RE/UCD university research project</p>
+      </div>
+    </footer>
   </body>
 </html>
