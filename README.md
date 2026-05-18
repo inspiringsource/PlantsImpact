@@ -65,19 +65,6 @@ Emerging Patterns
 
 ⸻
 
-This is very good material for:
-
-- Affinity Diagram
-- User motivation analysis
-- Refining user types
-- Updating assumptions
-
-And you did the right thing:
-You’re collecting insights without immediately implementing features.
-
-If you want next, I can help you:
-
-- Turn this into a 500-character “Lösungsprozess & Erkenntnisse”
 - Or structure it into an Affinity Diagram format.
 
 ## Run locally
