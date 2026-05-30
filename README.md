@@ -84,7 +84,7 @@ No backend is required.
 
 ## Feedback
 
-The prototype includes a lightweight integrated feedback flow using Google Forms to support RE/UCD validation and usability testing.
+The prototype includes a lightweight integrated feedback flow using Google Forms to support ucdRE validation and usability testing.
 
 ## Sustainable Development Goals
 
