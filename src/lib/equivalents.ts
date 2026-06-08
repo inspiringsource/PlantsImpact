@@ -29,11 +29,3 @@ export function equivalentForCooling(): string {
 export function equivalentForBiodiversity(score: number): string {
   return `Pollinator support: ${pollinatorSupportLevel(score)}`;
 }
-
-export function equivalentForSleep(): string {
-  return "Proxy score only: better air quality and lower indoor CO₂ may support better sleep for some people";
-}
-
-export const EQUIVALENT_CONSTANTS = {
-  CO2_KG_PER_KM,
-};

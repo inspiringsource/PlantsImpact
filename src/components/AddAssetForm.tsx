@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import type { SubmitEvent } from "react";
 import { addAsset } from "../lib/storage";
 import { speciesList } from "../lib/species";
 import type { AssetCategory } from "../types";
@@ -23,7 +24,7 @@ export default function AddAssetForm() {
     );
   }, [category, search]);
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(event: SubmitEvent<HTMLFormElement>) {
     event.preventDefault();
 
     if (!speciesId) return;

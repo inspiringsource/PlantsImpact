@@ -1,8 +1,12 @@
 # PlantsImpact
 
-PlantsImpact is a mobile-first MVP prototype developed for Requirements Engineering (RE) and User-Centered Design (UCD).
+PlantsImpact is a mobile-first MVP prototype developed for the ucdRE course, combining Requirements Engineering and User-Centered Design.
 
 The prototype helps users explore the estimated long-term positive impact of plants through a simple and motivating experience.
+
+## Project Status
+
+The main development work and Requirements Engineering deliverables are complete. The project is currently in the final submission phase of the ucdRE course.
 
 Users can:
 
@@ -12,7 +16,7 @@ Users can:
 - Explore lightweight social motivation through Friends and Leaderboard views
 - Provide structured MVP feedback through an integrated feedback form
 
-The prototype intentionally focuses on a minimal and realistic MVP scope for validation purposes.
+The prototype intentionally keeps a minimal and realistic MVP scope for validation and archival purposes.
 
 ## MVP Focus
 
@@ -33,30 +37,44 @@ The application intentionally avoids complex systems such as:
 - Video tutorials
 - Care reminder systems
 
-This allows the project to remain focused on validating the core Requirements Engineering assumptions and user interactions.
+This keeps the project focused on validating core Requirements Engineering assumptions and User-Centered Design interactions.
+
+## Project Journey
+
+PlantsImpact began as an open sustainability idea about making the positive effects of plants more visible. Through brainstorming, interviews, personas, validation activities, and requirements refinement, the team narrowed that broad topic into a focused MVP for exploring estimated long-term plant impact.
+
+The prototype evolved iteratively as findings from User-Centered Design activities informed the requirements and interface. The team continuously reviewed priorities, reduced scope, and concentrated on the smallest set of core features needed to create a realistic and testable user flow.
+
+Many ideas, including authentication, real plant recognition, advanced gamification, groups, tutorials, and care reminders, were intentionally postponed to avoid feature creep and keep the MVP aligned with user needs. This project was developed as part of the ucdRE course to apply Requirements Engineering and User-Centered Design methods in practice.
 
 ## Technology
 
 - Astro
 - TypeScript
+- React components
+- Tailwind CSS
 - PWA support
 - Local storage persistence
 - Netlify deployment
 
 ## Run locally
 
+Install dependencies and start the Astro development server:
+
 ```sh
 npm install
 npm run dev
 ```
 
-Open:
+Open the local URL shown by Astro. By default, it is:
 
 ```text
 http://localhost:4321
 ```
 
 ## Build
+
+Create a production build and preview it locally:
 
 ```sh
 npm run build
@@ -71,9 +89,10 @@ dist/
 
 ## PWA Setup
 
-- Manifest: `public/manifest.webmanifest`
-- Service worker generated with `vite-plugin-pwa`
+- Static manifest: `public/manifest.webmanifest`
+- Production manifest and service worker generated with `vite-plugin-pwa`
 - Offline support through cached assets and local storage
+- Runtime icons in `public/`
 
 ## Deploy to Netlify
 
