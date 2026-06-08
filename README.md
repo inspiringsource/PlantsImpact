@@ -2,6 +2,10 @@
 
 PlantsImpact is a mobile-first MVP prototype developed for the ucdRE course, combining Requirements Engineering and User-Centered Design.
 
+![PlantsImpact Overview](public/PlantsImpact.jpg)
+
+*Overview of the PlantsImpact MVP prototype, illustrating plant discovery, impact visualization, plant management, and user motivation features.*
+
 The prototype helps users explore the estimated long-term positive impact of plants through a simple and motivating experience.
 
 ## Project Status
